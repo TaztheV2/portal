@@ -1,16 +1,57 @@
 <!doctype html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Tyler | WDD130 Portal</title><link rel="stylesheet" href="styles/style.css"></head>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Student web development portfolio and coursework projects.">
+  <title>Home | Web Development Portfolio</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
 <body>
-<header><a class="brand" href="index.html"><span class="logo">TC<span>&lt;/&gt;</span></span><span>WEB DEVELOPMENT<br><b>PORTFOLIO</b></span></a><p>Learning, building, and creating for the web.</p></header>
-<nav><a class="active" href="index.html">Home</a><a href="wwr/index.html">WWR</a><a href="ice.html">ICE</a><a href="about.html">About Me</a></nav>
-<main class="grid">
-<section class="panel intro"><small>WDD130 · WEB FUNDAMENTALS</small><h1>Welcome to my portal.</h1><p>This site brings together the projects and skills I develop throughout WDD130. Explore my work and follow my progress as I build for the web.</p><a class="button" href="about.html">A little about me</a></section>
-<section class="hero"><div>IDEAS <i>→</i> CODE <i>→</i> CREATION</div></section>
-<section class="panel wide"><small>WHAT I'M BUILDING</small><h2>Class projects</h2><div class="cards">
-<article><b>01</b><h3>River Edge Rafting</h3><p>A website project presenting a rafting company and its adventures.</p><a href="wwr/index.html">View WWR project →</a></article>
-<article><b>02</b><h3>In-Class Exercises</h3><p>Exercises to practise HTML, CSS, layout, and design.</p><a href="ice.html">Explore ICE projects →</a></article>
-<article><b>03</b><h3>About Me</h3><p>My interests, goals, and what motivates me to create.</p><a href="about.html">Read about me →</a></article></div></section>
-<aside class="panel"><small>CURRENT TOOLKIT</small><h2>Skills I'm developing</h2><ul><li>Semantic HTML</li><li>CSS styling</li><li>CSS Grid layouts</li><li>Responsive design</li></ul></aside>
-<section class="panel"><small>MY LEARNING</small><h2>Progress overview</h2><table><thead><tr><th>Area</th><th>Focus</th><th>Status</th></tr></thead><tbody><tr><td>HTML</td><td>Page structure</td><td>Practising</td></tr><tr><td>CSS</td><td>Layout and style</td><td>In progress</td></tr><tr><td>Design</td><td>Consistency</td><td>Developing</td></tr></tbody></table></section>
-<section class="panel"><small>GET IN TOUCH</small><h2>Send a message</h2><form action="#"><label for="name">Name</label><input id="name" name="name" type="text"><label for="email">Email</label><input id="email" name="email" type="email"><label for="message">Message</label><textarea id="message" name="message" rows="3"></textarea><button type="submit">Send message</button></form></section>
-</main><footer><p>© 2026 Tyler's WDD130 Portfolio</p><p>Built as part of WDD130 · Web Fundamentals</p></footer></body></html>
+<header class="site-header">
+  <a class="brand" href="index.html">Web Development Portfolio</a>
+  <nav aria-label="Main navigation"><ul class="nav-list">
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="wwr/index.html">WWR</a></li>
+    <li><a href="ice.html">ICE</a></li>
+    <li><a href="about.html">About Me</a></li>
+  </ul></nav>
+</header>
+<main>
+  <section class="hero">
+    <div>
+      <p class="eyebrow">WDD 130 · Student Portfolio</p>
+      <h1>Building ideas for the web.</h1>
+      <p>This portfolio brings together my web development coursework, practice projects, and the skills I am developing as I learn to design and build websites.</p>
+      <a class="button-link" href="ice.html">Explore my ICE projects</a>
+    </div>
+    <div class="hero-art" role="img" aria-label="Abstract illustration representing web development">
+      <div class="art-window"><div class="art-dots">● ● ●</div><div class="art-line wide"></div><div class="art-line"></div><div class="art-tiles"><i></i><i></i><i></i></div><div class="art-line short"></div></div>
+    </div>
+  </section>
+  <section class="section">
+    <p class="eyebrow">What you can find here</p><h2>Explore the portfolio</h2>
+    <div class="card-grid">
+      <article class="project-card"><span class="number">01</span><h3>Web Development</h3><p>Visit my rafting website and see how I apply HTML and CSS to create a complete website.</p><a href="wwr/index.html">View WWR project</a></article>
+      <article class="project-card"><span class="number">02</span><h3>In-Class Exercises</h3><p>Browse exercises that helped me practise page structure, layout, styling, and presenting content.</p><a href="ice.html">View ICE projects</a></article>
+      <article class="project-card"><span class="number">03</span><h3>About Me</h3><p>Learn about my interests, goals, and what motivates me to keep learning about technology.</p><a href="about.html">Read about me</a></article>
+    </div>
+  </section>
+  <section class="section split">
+    <div><p class="eyebrow">Current focus</p><h2>Learning by building</h2><p>I learn best when I can apply a concept to a real project. Each assignment gives me a chance to practise problem-solving, improve my code, and understand how web technologies work together.</p></div>
+    <div class="panel"><h3>Skills I am practising</h3><ul><li>Writing semantic HTML</li><li>Styling pages with CSS</li><li>Creating responsive layouts with Grid and Flexbox</li><li>Organising project files</li><li>Testing and improving websites</li></ul></div>
+  </section>
+  <section class="section"><p class="eyebrow">Progress tracker</p><h2>Portfolio development</h2>
+    <div class="table-wrap"><table><caption>Portfolio assignment milestones</caption><thead><tr><th scope="col">Milestone</th><th scope="col">Focus</th><th scope="col">Status</th></tr></thead><tbody>
+      <tr><th scope="row">Design</th><td>Plan layout, colours, and typography</td><td>Completed</td></tr>
+      <tr><th scope="row">Structure</th><td>Build pages with semantic HTML</td><td>Completed</td></tr>
+      <tr><th scope="row">Styling</th><td>Apply CSS and responsive layouts</td><td>Completed</td></tr>
+      <tr><th scope="row">Final review</th><td>Check links, content, and presentation</td><td>Check before submission</td></tr>
+    </tbody></table></div>
+  </section>
+  <section class="section split"><div><p class="eyebrow">Get in touch</p><h2>Questions or feedback?</h2><p>This sample form demonstrates accessible form structure. It does not send messages until connected to a form service or backend.</p></div>
+    <form class="panel form"><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Your name"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com"><label for="message">Message</label><textarea id="message" name="message" rows="4" placeholder="Write a message"></textarea><button type="submit">Submit sample form</button></form>
+  </section>
+</main>
+<footer class="site-footer"><p>© 2026 Student Web Development Portfolio</p><ul><li><a href="index.html">Home</a></li><li><a href="ice.html">ICE</a></li><li><a href="about.html">About</a></li></ul></footer>
+</body></html>
